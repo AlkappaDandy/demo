@@ -10,7 +10,6 @@ public class Adapter{
       Gson gson = new Gson();
       java.lang.reflect.Type productList = new TypeToken<ArrayList<Product>>(){}.getType();
       List<Product> products = gson.fromJson(FileReader.readJsonFile("test.json"),productList);
-      //Recipe recipes = gson.fromJson(FileReader.readJsonFile("test.json"),Recipe.class);
       return products;
    }
    

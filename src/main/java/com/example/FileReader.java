@@ -15,7 +15,6 @@ public class FileReader {
     while (myReader.hasNextLine()) {
         String data = myReader.nextLine();
         jsonString = jsonString + data;
-        System.out.println(data);
     }
     myReader.close();
     } catch (FileNotFoundException e) {
